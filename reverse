@@ -1,0 +1,42 @@
+#case1
+
+value = input('Enter the string: ')
+print('The  input string is:',value)
+
+str1 = ''
+for i in value:  
+    str1 = i + str1 
+print('The output string is:',str1)
+
+excepted output:
+Enter the string: 1234abcd
+The  input string is: 1234abcd
+The output string is: dcba4321
+
+#case2
+
+def string_reverse(str1):
+    rstr1 = ''
+    index = len(str1)
+    while index > 0:
+        rstr1 += str1[ index - 1 ]
+        index = index - 1
+    return rstr1
+print(string_reverse('1234abcd'))
+
+excepted output:
+dcba4321
+
+#case3
+
+mystr=input("Enter a String: ")
+def reverse(str):
+  s=""
+  for ch in str:
+    s=ch+s
+  return s
+print("The reversed string is: ",reverse(mystr))
+
+excepted output:
+Enter a String: 1234abcd
+The reversed string is:  dcba4321
